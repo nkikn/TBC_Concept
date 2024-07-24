@@ -1,0 +1,87 @@
+$tbcBlue: #182cc0;
+$hoverColor: #007aff;
+$gray: rgba(128, 128, 128, 0.865);
+$navColor: #222222;
+
+body {
+    font-family: TBCX, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+img {
+    height: 80px;
+    margin-left: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: medium;
+}
+
+.nav-item {
+    color: $navColor;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fa-magnifying-glass {
+    font-size: 24px;
+    color: $gray;
+    transition: color 0.3s;
+}
+
+.fa-magnifying-glass:hover {
+    color: $hoverColor;
+}
+
+.fa-arrow-right {
+    font-size: 20px;
+    color: $tbcBlue;
+    transition: color 0.3s;
+}
+
+.fa-arrow-right:hover {
+    color: $hoverColor;
+}
+
+.order {
+    color: $tbcBlue;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.order:hover {
+    color: $hoverColor;
+}
+
+.fa-globe {
+    font-size: 20px;
+    color: $gray;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lang-text {
+    color: $gray;
+}
