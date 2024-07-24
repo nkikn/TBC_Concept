@@ -1,0 +1,112 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    img {
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 210px;
+        max-width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: medium;
+
+        .nav-item {
+            color: $navColor;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .fa-magnifying-glass {
+            font-size: 24px;
+            color: $gray;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+
+        .fa-arrow-right {
+            font-size: 20px;
+            color: $tbcBlue;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+
+        .order {
+            color: $tbcBlue;
+            cursor: pointer;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+
+        .fa-globe {
+            font-size: 20px;
+            color: $gray;
+        }
+
+        .lang {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .lang-text {
+                color: $gray;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        
+        img {
+            margin-left: 0; 
+            margin-bottom: 10px; 
+        }
+
+        nav {
+            flex-direction: column;
+            gap: 10px;
+            font-size: small;
+            align-items: flex-start;
+        }
+
+        .header-right {
+            gap: 10px;
+            align-self: stretch;
+            justify-content: space-between;
+
+            .fa-magnifying-glass,
+            .fa-arrow-right {
+                font-size: 18px; 
+            }
+
+            .fa-globe {
+                font-size: 16px; 
+            }
+        }
+    }
+}

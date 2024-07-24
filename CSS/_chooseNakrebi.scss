@@ -1,0 +1,105 @@
+.choose-nakrebi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    .heading {
+        text-align: left;
+        width: 70%; 
+        margin-bottom: 40px;
+        
+        h2 {
+            font-size: 24px; 
+            margin: 0; 
+            font-weight: 700;
+        }
+    }
+
+    .columns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 70%;
+        
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; /* Spacing between items in each column */
+            flex: 1; /* Distribute space equally among columns */
+
+            .digital, .premium {
+                position: relative;
+                text-align: center;
+                width: 100%; /* Ensure images fit their container */
+                height: 200px; /* Adjust as needed */
+                img {
+                    width: 100%; /* Ensure images fit their container */
+                    height: 100%; /* Ensure images fit their container */
+                    border-radius: 10px; /* Optional: add rounded corners */
+                }
+
+                .digital-text, .premium-text {
+                    position: absolute;
+                    bottom: 10px; /* Position text at the bottom of the image */
+                    left: 50%;
+                    transform: translateX(-50%); /* Center text horizontally */
+                    color: #fff; /* Optional: adjust text color */
+                    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Optional: add text shadow for readability */
+                    padding: 10px;
+                }
+
+                .button-text {
+                    color: $textColor; /* Adjust button color */
+                    text-decoration: underline; /* Add underline to text */
+                    font-weight: bold;
+                }
+            }
+
+            .three-sixty {
+                position: relative;
+                text-align: center;
+                width: 100%; /* Ensure images fit their container */
+                height: 420px; /* Digital + Premium height */
+                img {
+                    width: 100%; /* Ensure images fit their container */
+                    height: 100%; /* Ensure images fit their container */
+                    border-radius: 10px; /* Optional: add rounded corners */
+                }
+
+                .three-sixty-text {
+                    position: absolute;
+                    bottom: 10px; /* Position text at the bottom of the image */
+                    left: 50%;
+                    transform: translateX(-50%); /* Center text horizontally */
+                    color: #fff; /* Optional: adjust text color */
+                    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Optional: add text shadow for readability */
+                    padding: 10px;
+                }
+
+                .button-text {
+                    color: $textColor; /* Adjust button color */
+                    text-decoration: underline; /* Add underline to text */
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .choose-nakrebi {
+        padding: 10px;
+
+        .columns {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .column {
+            gap: 10px;
+        }
+    }
+}

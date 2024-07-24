@@ -1,0 +1,113 @@
+.main {
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    width: 100%;
+    
+
+    .main-title {
+        text-align: left;
+        font-size: 12px;
+        margin: 10px 0 50px 0;
+        color: $mainColor;
+        width: 70%;
+        font-size: small;
+    }
+
+    .main-image {
+        width: 70%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .main-text {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%); 
+        max-width: 40%;
+        padding: 20px;
+        text-align: left;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: $textColor;
+            font-weight: 700;
+            margin-top: 75px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: $textColor;
+            font-weight: bold;
+        }
+
+        .main-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: $textColor;;
+            background-color: $tbcBlue;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $hoverColor;
+            }
+        }
+    }
+
+    .big-text{
+        color: $mainColor;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.5;
+        width: 70%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        .main-title {
+            font-size: 12px;
+            margin-bottom: 10px;
+            width: 95%;
+        }
+
+        .main-image {
+            height: auto; 
+        }
+
+        .main-text {
+            max-width: 90%; 
+            padding: 15px;
+            
+            h1 {
+                font-size: 18px; 
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px; 
+                margin-bottom: 40px;
+            }
+
+            .main-button {
+                padding: 6px 12px; 
+                font-size: 12px; 
+            }
+        }
+
+    }
+}
