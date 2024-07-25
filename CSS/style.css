@@ -298,6 +298,30 @@ header .header-right .lang .lang-text {
     gap: 10px;
   }
 }
+.stats {
+  padding: 100px 240px;
+  display: flex;
+  grid-column-gap: 30px;
+}
+.stats .numbers-item {
+  grid-row-gap: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 80px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.stats .numbers-item .number {
+  color: #141719;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
 body {
   font-family: "Noto Sans Georgian", sans-serif;
   font-optical-sizing: auto;
