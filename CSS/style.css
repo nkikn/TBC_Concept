@@ -213,58 +213,77 @@ header .header-right .lang .lang-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Spacing between items in each column */
-  flex: 1; /* Distribute space equally among columns */
+  gap: 20px;
+  flex: 1;
 }
 .choose-nakrebi .columns .column .digital, .choose-nakrebi .columns .column .premium {
   position: relative;
   text-align: center;
-  width: 100%; /* Ensure images fit their container */
-  height: 200px; /* Adjust as needed */
+  width: 100%;
+  height: 300px;
 }
 .choose-nakrebi .columns .column .digital img, .choose-nakrebi .columns .column .premium img {
-  width: 100%; /* Ensure images fit their container */
-  height: 100%; /* Ensure images fit their container */
-  border-radius: 10px; /* Optional: add rounded corners */
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 .choose-nakrebi .columns .column .digital .digital-text, .choose-nakrebi .columns .column .digital .premium-text, .choose-nakrebi .columns .column .premium .digital-text, .choose-nakrebi .columns .column .premium .premium-text {
   position: absolute;
-  bottom: 10px; /* Position text at the bottom of the image */
-  left: 50%;
-  transform: translateX(-50%); /* Center text horizontally */
-  color: #fff; /* Optional: adjust text color */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Optional: add text shadow for readability */
+  bottom: 15%;
+  left: 15%;
+  transform: translateX(-50%);
+  color: #fff;
   padding: 10px;
 }
 .choose-nakrebi .columns .column .digital .button-text, .choose-nakrebi .columns .column .premium .button-text {
-  color: #fff; /* Adjust button color */
-  text-decoration: underline; /* Add underline to text */
+  color: #fff;
+  text-decoration: underline;
   font-weight: bold;
+}
+.choose-nakrebi .columns .column .digital .button-text:hover, .choose-nakrebi .columns .column .premium .button-text:hover {
+  color: #AEAEAE;
+  text-decoration: none;
 }
 .choose-nakrebi .columns .column .three-sixty {
   position: relative;
   text-align: center;
-  width: 100%; /* Ensure images fit their container */
-  height: 420px; /* Digital + Premium height */
+  width: 100%;
+  height: 620px;
 }
 .choose-nakrebi .columns .column .three-sixty img {
-  width: 100%; /* Ensure images fit their container */
-  height: 100%; /* Ensure images fit their container */
-  border-radius: 10px; /* Optional: add rounded corners */
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 .choose-nakrebi .columns .column .three-sixty .three-sixty-text {
   position: absolute;
-  bottom: 10px; /* Position text at the bottom of the image */
-  left: 50%;
-  transform: translateX(-50%); /* Center text horizontally */
-  color: #fff; /* Optional: adjust text color */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Optional: add text shadow for readability */
+  bottom: 10%;
+  left: 15%;
+  transform: translateX(-50%);
+  color: #fff;
   padding: 10px;
 }
 .choose-nakrebi .columns .column .three-sixty .button-text {
-  color: #fff; /* Adjust button color */
-  text-decoration: underline; /* Add underline to text */
+  color: #fff;
+  text-decoration: underline;
   font-weight: bold;
+}
+.choose-nakrebi .columns .column .three-sixty .button-text:hover {
+  color: #AEAEAE;
+  text-decoration: none;
+}
+.choose-nakrebi .columns .column i {
+  margin-left: 80px;
+  margin-right: 30px;
+  color: #fff;
+}
+.choose-nakrebi .columns .column i:hover {
+  color: #AEAEAE;
+}
+.choose-nakrebi .columns .column h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 50px;
 }
 
 @media (max-width: 768px) {
