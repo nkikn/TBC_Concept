@@ -1,6 +1,6 @@
 .offers{
 
-    margin-left: 16%;
+    width: 100%;
 
     .offers-heading{
         display: flex;
@@ -14,9 +14,7 @@
             font-weight: 700;
         }
 
-        .link{
-            margin-right: 19%;
-            
+        .link{            
             i{
                 color: $tbcBlue;
                 margin-right: 10px;
@@ -31,6 +29,7 @@
             text-decoration: none;
             color: $tbcBlue;
             position: relative;
+            font-weight: bold;
 
             &:hover{
                 color: $hoverColor;

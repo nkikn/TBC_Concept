@@ -1,15 +1,18 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    height: 80px;
-    background-color: $textColor;
+    justify-content: center;
+    height: 80px !important;
+
+
+    .container{
+        flex-direction: row !important;
+    }
 
     img {
         height: 30px;
         margin-top: 10px;
-        margin-left: 210px;
+        // margin-left: 210px;
         max-width: 100%;
     }
 
@@ -55,6 +58,7 @@ header {
             color: $tbcBlue;
             cursor: pointer;
             transition: color 0.3s;
+            font-weight: bold;
 
             &:hover {
                 color: $hoverColor;
@@ -70,9 +74,15 @@ header {
             display: flex;
             align-items: center;
             gap: 5px;
+            padding: 3px;
+            border-radius: 3px;
 
             .lang-text {
                 color: $gray;
+            }
+
+            &:hover{
+                background-color: $aHover;
             }
         }
     }

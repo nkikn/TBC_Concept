@@ -1,0 +1,32 @@
+#digital-banking{
+
+    display: flex;
+    background-color: $textColor;
+    width: 100%;
+    justify-content: center;
+    min-height: 374px;
+    padding: 60px 0;
+
+    .container{
+        flex-direction: row;
+
+        .app-text{
+            h2{
+                color: $mainColor;
+            }
+
+            p{
+                color: $appText;
+            }
+        }
+        .app-image{
+            img{
+                max-height: 90%;
+                object-fit: contain;
+            }
+
+        }
+    }
+
+
+}
