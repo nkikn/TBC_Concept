@@ -5,24 +5,52 @@
     width: 100%;
     justify-content: center;
     min-height: 374px;
-    padding: 60px 0;
+    // padding: 60px 0;
 
     .container{
         flex-direction: row;
 
         .app-text{
+            display: flex;
+            flex-direction: column;
+            grid-row-gap: 16px;
+
+            .buttons{
+                display: flex;
+                grid-column-gap: 16px;
+
+                a{
+                    padding: 16px 32px;
+                    border: 1px solid $borderColor;
+                    margin: 8px 0 0;
+
+                    &:hover{
+                        background-color: $back;
+                    }
+                }
+
+            }
+
             h2{
                 color: $mainColor;
+                font-size: 24px;
             }
 
             p{
                 color: $appText;
+                font-size: 16px;
             }
+
         }
         .app-image{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
             img{
-                max-height: 90%;
-                object-fit: contain;
+                height: 365px;
+                align-self: flex-end;
+                padding: 0;
             }
 
         }

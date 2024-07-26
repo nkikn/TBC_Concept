@@ -5,6 +5,8 @@
 @import "./statistics";
 @import "./offers";
 @import "./digitalBanking";
+@import "./products";
+@import "./personalAccountant";
 
 *{
     flex-wrap: wrap;
@@ -63,4 +65,8 @@ main{
     &:hover {
         background-color: $hoverColor;
     }
+}
+
+h1, h2, h3{
+    color: $mainColor;
 }
