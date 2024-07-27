@@ -8,6 +8,7 @@
 @import "./products";
 @import "./personalAccountant";
 @import "./awards";
+@import "./footer";
 
 *{
     flex-wrap: wrap;
@@ -70,6 +71,33 @@ main{
 
 h1, h2, h3{
     color: $mainColor;
+}
+
+.lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    gap: 4px;
+    cursor: pointer;
+    padding: 0 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: ease-in-out 0.3s;
+
+    .fa-globe {
+        font-size: 20px;
+        color: $gray;
+    }
+    
+    .lang-text {
+        color: $gray;
+    }
+
+    &:hover{
+        background-color: $langHover;
+
+    }
 }
 
 

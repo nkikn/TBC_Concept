@@ -165,5 +165,9 @@
         margin: 10px;
         font-size: 18px;
         border-radius: 5px;
+
+        &:hover{
+            color: $aHover !important;
+        }
     }
 }

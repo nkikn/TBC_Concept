@@ -60,24 +60,6 @@ header .header-right .order {
 header .header-right .order:hover {
   color: #007aff;
 }
-header .header-right .fa-globe {
-  font-size: 20px;
-  color: rgba(128, 128, 128, 0.865);
-}
-header .header-right .lang {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 0 8px;
-  border-radius: 3px;
-  transition: ease 0.3s;
-}
-header .header-right .lang .lang-text {
-  color: rgba(128, 128, 128, 0.865);
-}
-header .header-right .lang:hover {
-  background-color: #EEF1F1;
-}
 header .header_menu_buttons {
   display: none;
   grid-row-gap: 5px;
@@ -553,6 +535,9 @@ header .header_menu_buttons .header_menu_buttons-line-3 {
   font-size: 18px;
   border-radius: 5px;
 }
+#offers button:hover {
+  color: #AEAEAE !important;
+}
 
 #digital-banking {
   display: flex;
@@ -838,6 +823,152 @@ header .header_menu_buttons .header_menu_buttons-line-3 {
   font-size: 18px;
   border-radius: 5px;
 }
+#awards button:hover {
+  color: #AEAEAE !important;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+}
+footer * {
+  color: #555f62;
+}
+footer .footer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+footer .footer-header svg {
+  height: 30px;
+  width: 165px;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+footer p {
+  margin: 0;
+}
+footer .footer-main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+footer .footer-main .infos {
+  display: flex;
+  grid-column-gap: 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+footer .footer-main .infos .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-main .infos:hover {
+  text-decoration: underline;
+}
+footer .footer-main .inside-header {
+  cursor: pointer;
+}
+footer .footer-main .inside-header:hover {
+  color: #182CC0;
+}
+footer .footer-main .nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  grid-row-gap: 20px;
+}
+footer .footer-main .noPad {
+  padding: 0 !important;
+}
+footer .footer-main .social {
+  padding: 0 !important;
+  margin-bottom: 16px;
+}
+footer .footer-main .header {
+  color: #141719;
+  font-weight: bold;
+  padding-bottom: 24px;
+  cursor: pointer;
+}
+footer .footer-main .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-row-gap: 16px;
+  margin: 32px 0;
+}
+footer .social-media {
+  display: flex;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  flex-wrap: wrap;
+}
+footer .social-media .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #f9fafa;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: #141719 0.25s ease-in-out, #182cc0 0.25s ease-in-out;
+}
+footer .social-media .icon .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-media .icon:hover {
+  transition: ease-in-out 0.25s;
+  background-color: #EEEEEE;
+}
+footer .footer-footer {
+  background-color: #fff;
+  border-top: 1px solid #eef1f1;
+  padding: 28px 0;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column-gap: 40px;
+  width: 100%;
+  color: #555f62;
+}
+footer .footer-footer .footer-logo {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 8px;
+}
+footer .footer-footer .footer-logo .footer_bottom-logo {
+  width: 21px;
+  display: flex;
+  align-items: center;
+}
+footer .footer-footer .footer-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-row-gap: 8px;
+  grid-column-gap: 35px;
+}
+footer .footer-footer .footer-info p:hover {
+  cursor: pointer;
+  color: #182CC0;
+}
 
 * {
   flex-wrap: wrap;
@@ -898,6 +1029,29 @@ main {
 
 h1, h2, h3 {
   color: #141719;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  gap: 4px;
+  cursor: pointer;
+  padding: 0 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: ease-in-out 0.3s;
+}
+.lang .fa-globe {
+  font-size: 20px;
+  color: rgba(128, 128, 128, 0.865);
+}
+.lang .lang-text {
+  color: rgba(128, 128, 128, 0.865);
+}
+.lang:hover {
+  background-color: #EEF1F1;
 }
 
 @media screen and (max-width: 991px) {

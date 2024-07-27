@@ -28,16 +28,12 @@ const awardsUpdateSlider = () => {
     awardsthumb.style.width = `${thumbWidth}px`;
     awardsthumb.style.left = `${thumbOffset}px`;
     if(awardscurrentIndex == 0){
-        awardsprevBtn.style.color = "#AEAEAE";
-    }else if(awardscurrentIndex == 2){
-        awardsnextBtn.style.color = "#AEAEAE";
-    }else{
-        awardsprevBtn.style.color = "#182cc0";
         awardsnextBtn.style.color = "#182cc0";
+        awardsprevBtn.style.color = "#AEAEAE";
+    }else if(awardscurrentIndex == 1){
+        awardsprevBtn.style.color = "#182cc0";
+        awardsnextBtn.style.color = "#AEAEAE";
     }
-
-    console.log("shemovidaaa");
-
 };
 
 const awardsonThumbMouseDown = (e) => {
