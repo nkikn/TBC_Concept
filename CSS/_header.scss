@@ -9,7 +9,7 @@ header {
     z-index: 1000;
     background-color: $textColor;
     border-bottom: 1px solid #eef1f1;
-
+    
 
     .container{
         flex-direction: row !important;
@@ -32,6 +32,7 @@ header {
             color: $navColor;
             cursor: pointer;
             transition: color 0.3s;
+            font-size: 14px;
         }
     }
 

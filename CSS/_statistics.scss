@@ -28,3 +28,12 @@
     }
 
 }
+
+
+@media screen and (max-width: 991px) {
+    .stats{
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
