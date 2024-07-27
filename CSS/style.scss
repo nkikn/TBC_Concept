@@ -25,10 +25,10 @@ body {
     display: block;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 main{
-    background-color:whitesmoke;
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -69,4 +69,18 @@ main{
 
 h1, h2, h3{
     color: $mainColor;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .container{
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 771) {
+    .container{
+        width: 100% !important;
+    }
 }

@@ -3,6 +3,12 @@ header {
     align-items: center;
     justify-content: center;
     height: 80px !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: $textColor;
+    border-bottom: 1px solid #eef1f1;
 
 
     .container{
@@ -74,17 +80,67 @@ header {
             display: flex;
             align-items: center;
             gap: 5px;
-            padding: 3px;
+            padding: 0 8px;
             border-radius: 3px;
+            transition: ease 0.3s;
 
             .lang-text {
                 color: $gray;
             }
 
             &:hover{
-                background-color: $aHover;
+                background-color: $langHover;
+
             }
         }
+    }
+
+    .header_menu_buttons{
+        display: none;
+        grid-row-gap: 5px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 8px;
+        transition: color .25s;
+        display: none;
+        position: relative;
+        .header_menu_buttons-line-1 {
+            width: 11px;
+            height: 2px;
+            transform-origin: 100%;
+            background-color: $appText;
+            border-radius: 1px;
+        }
+        .header_menu_buttons-line-2 {
+            width: 20px;
+            height: 2px;
+            background-color: $appText;
+            border-radius: 1px;
+        }
+        .header_menu_buttons-line-3 {
+            width: 15px;
+            height: 2px;
+            transform-origin: 100% 100%;
+            background-color: $appText;
+            border-radius: 1px;
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    nav{
+        display: none;
+        * {
+            display: none;
+        }
+    }
+
+    .header_menu_buttons{
+        display: flex !important;
     }
 }
 

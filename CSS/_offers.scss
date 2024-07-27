@@ -1,6 +1,7 @@
-.offers{
+#offers{
 
     width: 100%;
+    margin: 60px 0;
 
     .offers-heading{
         display: flex;
@@ -35,7 +36,136 @@
                 color: $hoverColor;
             }
         }
+    }
 
+    .offers-card{
+        width: 350px;
+        height: 470px;
+        border: 1px solid $borderColor;
+        margin: 0 17px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        overflow: hidden;
+        z-index: 100;
+        transition: box-shadow .4s ease-in-out, background-color linear;
+
+        &:hover{
+            background-color: $textColor;
+            box-shadow: 0px 36px 40px -15px rgba(12, 43, 67, 0.07);
+        }
+
+        
+        .card-text{
+            padding: 28px;
+
+            .categories{
+                display: flex;
+            }
+
+            p{
+                font-size: 12px;
+                color: #6F787B;
+                margin: 0 0 4px;
+                font-weight: bold;
+            }
+        }
+
+        p{
+            display: -webkit-box;            
+            -webkit-box-orient: vertical;    
+            overflow: hidden;                           
+        }
+    }
+
+    .card-image{
+        overflow: hidden;
+        height: 250px !important;
+        position: relative;
+        img{
+            width: 100%;
+            height: 105% !important;
+            object-fit: cover;
+            transition: transform .4s ease-in-out;
+        }
+
+        .logo-area{
+            position: absolute;
+            right: 0;
+            top: 16px;
+            width: 78px;
+            height: 56px;
+            border-radius: 6px 0 0 6px;
+            background-color: $textColor;
+            
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                border-radius: 6px 0 0 6px;
+            }
+        }
+    }
+
+    .offers-card[data-animation="img-up"]:hover .crd{
+        transform: translateY(-10px);
+    }
+
+    .offers-slider-container {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .offers-slider-wrapper {
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .offers-slider {
+        cursor: grab;
+        display: flex;
+        transition: transform 0.3s ease;
+        flex-wrap: nowrap;
+        
+    }
+    
+    .offers-controls {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .offers-scrollbar {
+        width: 80%;
+        height: 2.5px;
+        background-color: $borderColor;
+        border-radius: 6px;
+        position: relative;
+        margin: 0 10px;
+        flex-grow: 1;
+        cursor: pointer;
+    }
+    
+    .offers-thumb {
+        height: 100%;
+        background-color: $tbcBlue;
+        border-radius: 8px;
+        position: absolute;
+        transition: left 0.5s ease; 
+        cursor: grab;
+    }
+    
+    button {
+        background-color: $back;
+        color: $tbcBlue;
+        border: none;
+        cursor: pointer;
+        margin: 10px;
+        font-size: 18px;
+        border-radius: 5px;
     }
 
 
