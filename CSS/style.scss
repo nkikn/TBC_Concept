@@ -50,7 +50,8 @@ main{
     font-size: 12px;
     font-weight: 700;
     color: $textColor;
-    background-image: linear-gradient(15deg, #001682, #3240e5);
+    // background-image: linear-gradient(15deg, #001682, #3240e5);
+    cursor: pointer;
     background-color: $tbcBlue;
     text-decoration: none;
     border: none;
@@ -85,6 +86,18 @@ h1, h2, h3{
     font-weight: 700;
     transition: ease-in-out 0.3s;
 
+    .lang-text-hover {
+        display: none;
+    }
+    
+    .lang:hover .lang-text-hover {
+        display: inline;
+    }
+    
+    .lang:hover .lang-text {
+        display: none;
+    }
+
     .fa-globe {
         font-size: 20px;
         color: $gray;
@@ -96,11 +109,85 @@ h1, h2, h3{
 
     &:hover{
         background-color: $langHover;
-
     }
 }
 
 
+.footer-footer{
+    background-color: $textColor;
+    border-top: 1px solid #eef1f1;
+    padding: 28px 0;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column-gap: 40px;
+    width: 100%;
+    color: $appText;
+    
+    .footer-logo{
+        display: flex;
+        align-items: center;
+        grid-column-gap: 8px;
+
+        .footer_bottom-logo{
+            width: 21px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    .footer-info{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        grid-row-gap: 8px;
+        grid-column-gap: 35px;
+
+        p{
+            &:hover{
+                cursor: pointer;
+                color: #182CC0;
+            }
+        }
+    }
+}
+
+// .lang_list-wrapper {
+//     grid-row-gap: 8px;
+//     flex-direction: column;
+//     padding-top: 4px;
+//     display: none !important;
+//     position: absolute;
+//     top: 36px;
+//     bottom: auto;
+//     left: 0;
+//     right: 0;
+
+//     .lang_list {
+//         color: $mainColor;
+//         background-color: $textColor;
+//         border: 1px solid $borderColor;
+//         border-radius: 4px;
+//         flex-direction: column;
+//         padding-top: 8px;
+//         padding-bottom: 8px;
+//         font-weight: 500;
+//         display: flex;
+//         box-shadow: 0 4px 6px 2px rgba(12, 43, 67, .05);
+//         display: none;
+
+
+//         .lang_list-item {
+//             display: none;
+//             text-align: center;
+//             cursor: pointer;
+//             padding-top: 4px;
+//             padding-bottom: 4px;
+//             transition: background-color .25s ease-in-out;
+//         }
+//     }
+// }
 
 @media screen and (max-width: 991px) {
     .container{

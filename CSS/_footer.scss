@@ -41,7 +41,7 @@ footer{
         grid-auto-columns: 1fr;
         grid-column-gap: 16px;
         grid-row-gap: 16px;
-        // height: 271px;
+        padding-bottom: 45px;
 
         .infos{
             display: flex;
@@ -136,43 +136,43 @@ footer{
         }
     }
 
-    .footer-footer{
-        background-color: $textColor;
-        border-top: 1px solid #eef1f1;
-        padding: 28px 0;
-        font-size: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        grid-column-gap: 40px;
-        width: 100%;
-        color: $appText;
+    // .footer-footer{
+    //     background-color: $textColor;
+    //     border-top: 1px solid #eef1f1;
+    //     padding: 28px 0;
+    //     font-size: 12px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+    //     grid-column-gap: 40px;
+    //     width: 100%;
+    //     color: $appText;
 
-        .footer-logo{
-            display: flex;
-            align-items: center;
-            grid-column-gap: 8px;
+    //     .footer-logo{
+    //         display: flex;
+    //         align-items: center;
+    //         grid-column-gap: 8px;
 
-            .footer_bottom-logo{
-                width: 21px;
-                display: flex;
-                align-items: center;
-            }
-        }
+    //         .footer_bottom-logo{
+    //             width: 21px;
+    //             display: flex;
+    //             align-items: center;
+    //         }
+    //     }
 
-        .footer-info{
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            grid-row-gap: 8px;
-            grid-column-gap: 35px;
+    //     .footer-info{
+    //         display: flex;
+    //         align-items: center;
+    //         flex-wrap: wrap;
+    //         grid-row-gap: 8px;
+    //         grid-column-gap: 35px;
 
-            p{
-                &:hover{
-                    cursor: pointer;
-                    color: #182CC0;
-                }
-            }
-        }
-    }
+    //         p{
+    //             &:hover{
+    //                 cursor: pointer;
+    //                 color: #182CC0;
+    //             }
+    //         }
+    //     }
+    // }
 }
